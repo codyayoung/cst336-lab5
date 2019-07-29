@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF 8">
-    <title>Obscura - Image Search</title> 
+<% include partials/header.ejs %>
     <style>
         body {
             background-image: url(<%=imageURL%>)
@@ -13,8 +9,15 @@
 <body>
 
     <main>
-        <h1>Obscura</h1>
-    </main>
-</body>
 
-</html>
+        <h1>Obscura</h1>
+        <form action="/search">
+            <input type="text" placeholder="Enter a keyword" name="keyword"/> <br><br>
+            <button>
+                Search
+            </button>
+        </form>
+
+    </main>
+
+<% include partials/footer.ejs %>
