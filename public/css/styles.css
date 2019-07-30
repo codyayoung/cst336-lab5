@@ -1,0 +1,60 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+input, button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+main {
+    background-color: rgba(0,0,0,0.75);
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    color: white;
+}
+
+#favLink, #searchLink {
+    background-color: rgba(250,250,250,0.75);
+    color: #21BAAD;
+    font-size: 0.8em;
+}
+
+#favHeader {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    width: 50%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#favorites {
+    background-color: rgba(250,250,250,0.75);
+    margin: 0 auto;
+    width: 50%;
+}
+
+.image {
+    border-radius: 20px;
+}
+ 
+.imageContainer {
+    display: inline-block;
+    background-color: rgba(250,250,250,0.75);
+    padding: 15px;
+}
+
+.keywordLink {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 0.8em;
+    margin: 7px;
+}

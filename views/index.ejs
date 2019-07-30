@@ -1,9 +1,4 @@
-<% include partials/header.ejs %>
-    <style>
-        body {
-            background-image: url(<%=imageURL[0]%>)
-        }
-    </style>   
+<% include partials/header.ejs %> 
 </head>
 
 <body>
@@ -12,10 +7,11 @@
 
         <h1>Obscura</h1>
         <form action="/search">
-            <input type="text" placeholder="Enter a keyword" name="keyword"/> <br><br>
+            <input type="text" size="15" placeholder="Enter a keyword" name="keyword"/> <br><br>
             <button>
                 Search
             </button>
+            <br><br>
         </form>
 
     </main>

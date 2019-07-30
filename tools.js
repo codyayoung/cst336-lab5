@@ -67,7 +67,6 @@ getRandomImages: function(keyword, imageCount){
  */
 createConnection :function(){
 
-
     var conn = mysql.createConnection({
         host: "localhost",
         user: "root",

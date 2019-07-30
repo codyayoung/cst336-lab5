@@ -1,7 +1,21 @@
 <% include partials/header.ejs %>
 
+<body>
 
+<a id="searchLink" href="/">Return</a>
+<h1 id="favHeader">
+    Favorites
+</h1>
 
+<% rows.forEach(function(row) { %>
 
+    <a class="keywordLink"> <%= row['keyword'] %> </a>
+
+<% }) %>
+
+<hr>
+<div id="favorites">
+
+</div>
 
 <% include partials/footer.ejs %>
