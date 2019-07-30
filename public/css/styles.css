@@ -49,6 +49,7 @@ h1 {
 .imageContainer {
     display: inline-block;
     background-color: rgba(250,250,250,0.75);
+    border-radius: 20px;
     padding: 15px;
 }
 

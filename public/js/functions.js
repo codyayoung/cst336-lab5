@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $("#favorites").html("");
+
     $(".favoriteIcon").on("click", function(){
 
     //alert($(this).prev().attr("src"));
@@ -29,10 +31,14 @@ $(document).ready(function(){
 
                 $("#favorites").html("");
 
-                rows.forEach(function(row){
-                     $("#favorites").append("<img class='image' src='"+row.imageURL+"' width='200' height='200'>");
+                rows.forEach(function(row, i){
+                    if (i%4 == 0) {
+                        $("#favorites").append("<br>");
+                    }
+                    else {
+                        $("#favorites").append("<img class='imageContainer' src='"+row.imageURL+"' width='200' height='200'><img class='favIcon' src='img/favorite_on.png' width ='20'></div>");
+                    } 
                 });
-
             }
 
         }); //ajax
