@@ -2,9 +2,8 @@ $(document).ready(function(){
 
     $("#favorites").html("");
 
-    $(".favoriteIcon").on("click", function(){
+    $(document).on("click", ".favoriteIcon", function(){
 
-    //alert($(this).prev().attr("src"));
     var imageURL = $(this).prev().attr("src");
 
     if($(this).attr("src") == "img/favorite.png") {
@@ -36,7 +35,7 @@ $(document).ready(function(){
                         $("#favorites").append("<br>");
                     }
                     else {
-                        $("#favorites").append("<img class='imageContainer' src='"+row.imageURL+"' width='200' height='200'><img class='favIcon' src='img/favorite_on.png' width ='20'></div>");
+                        $("#favorites").append("<img class='imageContainer' src='"+row.imageURL+"' width='200' height='200'><img class='favoriteIcon' src='/img/favorite_on.png' width ='20'></div>");
                     } 
                 });
             }
