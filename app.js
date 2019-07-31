@@ -56,7 +56,7 @@ app.get("/api/updateFavorites", function(req, res){
 app.get("/displayKeywords", async function(req, res){
     var imageURLs = await tools.getRandomImages("", 1);
     var conn = tools.createConnection();
-    var sql = "SELECT DISTINCT keyword FROM img_gallery.favorites ORDER BY keyword;";
+    var sql = "SELECT DISTINCT keyword FROM favorites ORDER BY keyword;";
 
     conn.connect(function(err){
         conn.query(sql, function(err, result){
@@ -70,7 +70,7 @@ app.get("/displayKeywords", async function(req, res){
 
 app.get("/api/displayFavorites", function(req, res){
     var conn = tools.createConnection();
-    var sql = "SELECT imageURL FROM img_gallery.favorites WHERE keyword = ?;";
+    var sql = "SELECT imageURL FROM favorites WHERE keyword = ?;";
     var sqlParams = [req.query.keyword];
 
     conn.connect( function(err){
