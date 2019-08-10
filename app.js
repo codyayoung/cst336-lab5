@@ -89,6 +89,6 @@ app.get("/api/displayFavorites", function(req, res){
 
 // Heroku listener
 app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Heroku server running.")
+    console.log("Heroku server running.");
 });
 
